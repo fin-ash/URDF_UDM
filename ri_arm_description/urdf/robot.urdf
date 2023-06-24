@@ -1,0 +1,68 @@
+
+<robot name="ri_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Base link -->
+  <link name="base_link">
+    <!-- Link properties -->
+    <visual>
+      <geometry>
+        <cylinder length="0.35" radius="0.0125" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.35" radius="0.0125" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Link 1 -->
+  <link name="link1">
+    <!-- Link properties -->
+    <visual>
+      <geometry>
+        <cylinder length="0.35" radius="0.0125" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.35" radius="0.0125" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Joint 1 -->
+  <joint name="joint1" type="revolute">
+    <!-- Joint properties -->
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="link1" />
+    <axis xyz="0 0 1" />
+    <limit lower="-3.14" upper="3.14" effort="100" velocity="3.14" />
+  </joint>
+
+  <!-- Link 2 -->
+  <link name="link2">
+    <!-- Link properties -->
+    <visual>
+      <geometry>
+        <cylinder length="0.222" radius="0.0125" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.222" radius="0.0125" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Joint 2 -->
+  <joint name="joint2" type="revolute">
+    <!-- Joint properties -->
+    <origin xyz="0 0 0.175" rpy="0 0 0" />
+    <parent link="link1" />
+    <child link="link2" />
+    <axis xyz="0 1 0" />
+    <limit lower="-3.14" upper="3.14" effort="100" velocity="3.14" />
+  </joint>
+
+</robot>
