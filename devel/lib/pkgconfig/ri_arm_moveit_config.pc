@@ -1,0 +1,8 @@
+prefix=/home/iom/catkin_ws/devel/.private/ri_arm_moveit_config
+
+Name: ri_arm_moveit_config
+Description: Description of ri_arm_moveit_config
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

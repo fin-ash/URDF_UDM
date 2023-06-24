@@ -1,0 +1,3 @@
+Symlinking /home/iom/catkin_ws/devel/share/ri_arm_description/cmake/ri_arm_descriptionConfig-version.cmake
+Symlinking /home/iom/catkin_ws/devel/share/ri_arm_description/cmake/ri_arm_descriptionConfig.cmake
+Symlinking /home/iom/catkin_ws/devel/lib/pkgconfig/ri_arm_description.pc

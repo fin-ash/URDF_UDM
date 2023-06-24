@@ -1,0 +1,8 @@
+prefix=/home/iom/catkin_ws/devel/.private/ri_arm_description
+
+Name: ri_arm_description
+Description: Description of ri_arm_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
